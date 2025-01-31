@@ -239,15 +239,12 @@ button{
         margin-bottom: 2px;
     
     }
-    .flex{
-        display: flex;
-    }
     .flex i{
         display: inline-block;
         position: relative;
         left: -35px;
         top: -8px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .right input{
         width: 90%;
