@@ -247,6 +247,7 @@ button{
         position: relative;
         left: -35px;
         top: -8px;
+        font-size: 18px;
     }
     .right input{
         width: 90%;
