@@ -199,7 +199,7 @@ button{
     
     }
     .content{
-        width: 60%;
+        width: 90%;
         margin: 100px auto;
         display: flex;
         backdrop-filter: blur(15px) saturate(143%); 
