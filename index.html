@@ -1,1 +1,76 @@
-salom
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TikTok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/tiktok.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <nav>
+<img src="./short.png" alt="" class="logo">
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+            <div>
+                <a href="" class="login-btn">Log in</a>
+                <a href="" class="download-btn">Download</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <img src="./insta.png" alt="">
+            </div>
+            <div class="right">
+                <i>Welcome to</i>
+                <b>Instagram</b>
+                <label for="login" class="login-form">Login or email</label>
+                <input type="text" id="login" placeholder="Login or email">
+                
+                <label for="password" style="margin-top: 8px">Password</label>
+                <div class="flex">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <i class="bi bi-eye-fill" id="eye"></i>
+            </div>
+                <div class="help">
+                    <a href="">Forgot password?</a>
+                    <a href="">Sign Up</a>
+                </div>
+                
+                <button class="btn btn-primary btn-lg" style="padding: 5px 30px">Log In</button>
+                <div class="fot">
+                    <a href="">Privacy</a><a href=""> Get the app</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const togglePassword = document.getElementById('eye');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            
+            // Ko'zcha ikonini almashtirish
+            if(type=='password'){
+                $(this).addClass('bi bi-eye-fill');
+                $(this).removeClass('bi bi-eye-slash-fill'); 
+            }
+if(type=="text"){
+    $(this).addClass('bi bi-eye-slash-fill');
+    $(this).removeClass('bi bi-eye-fill');
+}
+        
+        });
+    </script>
+</body>
+</html>
